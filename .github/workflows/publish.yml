@@ -30,6 +30,6 @@ jobs:
     - name: Publish package to PyPI
       env:
         TWINE_USERNAME: __token__
-        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        TWINE_PASSWORD: ${{ secrets.pypi-AgEIcHlwaS5vcmcCJDk0ZDAwOGRlLTExN2UtNDcyOS1hOTJkLThhNTU2NmZjNjk5ZgACKlszLCI3NjIxZmU1My01NzE0LTQ0ODgtODlkOC04Yzg0MTRkZTU4ODciXQAABiC5deBD1Xa8UBFzah4Z0SGK5O4Yvn8U5q6LLC3542fKAw }}
       run: |
         twine upload dist/*
