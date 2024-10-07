@@ -1,0 +1,90 @@
+body {
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    position: relative;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.developer {
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    color: #2d3436;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #636e72;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dfe6e9;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0984e3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #74b9ff;
+}
+
+.telegram-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 32px;
+}
+
+.telegram-link a {
+    color: #0984e3;
+    text-decoration: none;
+}
+
+.telegram-link a:hover {
+    color: #74b9ff;
+}
+
+.login-link, .signup-link {
+    margin-top: 15px;
+    display: block;
+    color: #0984e3;
+    text-decoration: none;
+}
+
+.login-link:hover, .signup-link:hover {
+    color: #74b9ff;
+}
