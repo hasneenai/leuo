@@ -1,51 +1,39 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة إنشاء حساب</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Hosting Interface</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="developer">
-            <h2>المطور حسو ال علي</h2>
-        </div>
-        <div class="form-container">
-            <h1>إنشاء حساب</h1>
-            <form id="signup-form" method="POST" action="/signup">
-                <div class="input-group">
-                    <label for="email">البريد الإلكتروني</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="username">اسم المستخدم</label>
-                    <input type="text" id="username" name="username" required>
-                </div>
-                <div class="input-group">
-                    <label for="name">الاسم الكامل</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="input-group">
-                    <label for="phone">رقم الهاتف</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">كلمة السر</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="input-group">
-                    <label for="confirm-password">إعادة كتابة كلمة السر</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                <button type="submit">إنشاء حساب</button>
-            </form>
-            <a href="/login" class="login-link">تسجيل دخول</a>
-        </div>
+  <div class="container">
+    <h1>Python Hosting Interface</h1>
+    
+    <!-- Upload Section -->
+    <div class="section">
+      <h2>Upload Python File</h2>
+      <input type="file" id="fileInput" accept=".py">
+      <button onclick="uploadFile()">Upload File</button>
     </div>
-    <div class="telegram-link">
-        <a href="https://t.me/PY_50" target="_blank"><i class="fab fa-telegram"></i></a>
+
+    <!-- Code Creation Section -->
+    <div class="section">
+      <h2>Create New Python File</h2>
+      <input type="text" id="fileName" placeholder="Enter file name">
+      <textarea id="fileContent" placeholder="Enter your Python code here..."></textarea>
+      <button onclick="saveFile()">Save File</button>
     </div>
-    <script src="script.js"></script>
+
+    <!-- File Management Section -->
+    <div class="section">
+      <h2>Manage File</h2>
+      <input type="text" id="runFileName" placeholder="Enter file name to run">
+      <button onclick="runFile()">Run File</button>
+      <button onclick="stopFile()">Stop File</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
